@@ -1,6 +1,6 @@
 body{ 
     
-    font-family: "Open sans", "Helvetica Neue", Arial;
+    font-family: "Raleway", "Helvetica Neue", Arial;
 }
 
 #bloc_page{
@@ -52,35 +52,114 @@ nav a:hover{
     font-weight: 1000;
 }
 
-#search p{
+#search p, .fas.fa-map-marker-alt{
     
     font-size: 12px;
 }
 
-#search i{
+.search_button{
     
-    color: #0065FC;
-    margin-right: 8px;
-    font-size: 10px;  
+    display: flex;
+}
+
+
+.fas.fa-map-marker-alt, .fas.fa-map-marker-alt.circle{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fas.fa-map-marker-alt.circle{
+    
+    border: solid 4.6px #F2F2F2;
+    border-radius: 30% 0% 0% 30%;
+    background-color: #F2F2F2;
+    margin-right: -5px;
+    width: 35px;
+    height: 25px;
+}
+
+input{
+    
+    border: solid 1px #F2F2F2;
+    height: 30.5px;
+    width: 150px;
+}
+
+button{
+    
+    background-color: #0065FC;
+    border-radius: 0% 10px 10px 0%;
+    border: solid 1px #0065FC;
+    color: white;
+    font-weight: 1000;
+    font-size: 12px;
+    height: 34.5px
 }
 
 .information{
+    
     display: flex;
     align-items: center;
 }
+
 
 .fas.fa-info.circle {
     
     height: 10px;
     width: 10px;
     min-height: 20px;
-    min-width: 20px;;
+    min-width: 20px;
     border: solid 1px #F2F2F2;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1px;
+    color: #0065FC;
+    margin-right: 8px;
+    font-size: 10px;
+}
+
+.filter{
+    
+    display: flex;
+    width: 450px
+}
+
+.filter p{
+    
+    font-weight: 1000;
+    
+}
+
+.fas.fa-money-bill-wave{
+    
+    font-size: 12px;
+    color: #0065FC;
+    margin-right: -20px;
+}
+
+.fas.fa-money-bill-wave.circle{
+    
+    border: solid 10px #DEEBFF;
+    border-radius: 100%;
+    background-color: #DEEBFF;
+    display: flex;
+    align-items: center;
+    margin-left: -3px;
+    height: 10px;
+    width: 10px;
+}
+
+.economic{
+
+    display: flex;
+    border: solid 2px grey;
+    border-radius: 100px;
+    margin: auto;
+    align-items: center;
+    padding: 
 }
 
 footer{
