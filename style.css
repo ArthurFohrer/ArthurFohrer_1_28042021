@@ -124,7 +124,8 @@ button{
 .filter{
     
     display: flex;
-    width: 450px
+    width: 450px;
+    height: 30px;
 }
 
 .filter p{
@@ -133,33 +134,41 @@ button{
     
 }
 
-.fas.fa-money-bill-wave{
+.fas.fa-money-bill-wave, .fas.fa-child{
     
     font-size: 12px;
     color: #0065FC;
     margin-right: -20px;
 }
 
-.fas.fa-money-bill-wave.circle{
+.fas.fa-money-bill-wave.circle, .fas.fa-child.circle{
     
     border: solid 10px #DEEBFF;
     border-radius: 100%;
     background-color: #DEEBFF;
     display: flex;
-    align-items: center;
+	justify-content: center;
     margin-left: -3px;
     height: 10px;
     width: 10px;
 }
 
-.economic{
+.search_filter{
 
     display: flex;
-    border: solid 2px grey;
-    border-radius: 100px;
-    margin: auto;
     align-items: center;
-    padding: 
+    width: auto;
+    margin-right: 2em;
+    border: 2px solid #d9d9d9;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+.title_filter{
+	
+	margin-right: 5px;
+	margin-left: 25px;
+	font-size: 12px
 }
 
 footer{
