@@ -179,6 +179,101 @@ button{
 	font-size: 12px;
 }
 
+.activity{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.container{
+    
+    width: 250px;
+    height: 340px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px 15px 15px 15px;
+    margin-right: 30px;
+}
+
+.container_img{
+    
+    position: relative;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.half_container{
+    
+    width: 250px;
+    height: 120px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px 15px 15px 15px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+.half_container_img{
+    
+    position: relative;
+    width: 250px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px; 
+}
+
+.container_frioul_img{
+    
+    position: relative;
+    width: 250px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 90px;
+}
+
+.container_pomegues_img{
+    
+    position: relative;
+    width: 250px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.container_pomegues_img img{
+    
+    position: absolute;
+    top: -80%;
+}
+
+
+.container_frioul_img img{
+    position: absolute;
+    top: -20%;
+}
+
+.container_img img{
+    
+    position: absolute;
+    left: -50%;
+    top: 0%;
+}
+
+.activityDescription{
+    
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    margin-top: -12px;
+    border-radius: 0px 0px 15px 15px; 
+    font-weight: 1000;
+}
+
+.activityDescription p{
+    
+    padding: 5%;
+}
+
 footer{
     
     display: flex;
