@@ -1,7 +1,8 @@
 body{ 
     
     font-family: "Raleway", "Helvetica Neue", Arial;
-    zoom: 1.15;
+	margin: auto;
+	width: 80%;
 }
 
 #bloc_page{
@@ -9,10 +10,8 @@ body{
 }
 
 header{
-    
     display: flex;
     justify-content: space-between;
-    
 }
 
 nav ul{
@@ -126,12 +125,19 @@ button{
 .filter{
     
     display: flex;
-    width: 700px;
+	flex-wrap: wrap;
+    max-width: 700px;
+	width: auto;
     height: 30px;
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+.filter h5, search_filter{
+	display: flex;
+	flex-direction: column;
 }
 
 .filter p{
@@ -195,15 +201,19 @@ button{
     
     display: flex;
     flex-wrap: wrap;
+	zoom: 1.1;
+	position: relative;
+	justify-content: center;
+
 }
 
-.accommodation h4, .accommodation p{
+.accommodation h4, .accommodation p, .popular h4{
     
     margin-left: 20px;
 }
 
 .accommodation p{
-    margin-top: -70px;
+    margin-top: -80px;
     font-weight: 1000;
 }
 
@@ -218,13 +228,66 @@ button{
     margin-left: 20px;
 }
 
+.popular_header{
+	display: grid;
+    grid-template-columns: 1fr 10px;
+}
+
+.popular_icon{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-left: -40px;
+}
+
+.fa-chart-line {
+    font-size: 1.25rem;
+}
+
+.popular_containers{
+	
+    padding: 0 46px 0 55px;
+	display: flex;
+	flex-direction: column;
+}
+
+.popular_container{
+	display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 24px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+	height: 90px;
+	margin-bottom: 10px;
+}
+
+.popular_container_img img{
+	width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+}
+
+.popular_accommodationDescription{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.5rem 1rem;
+}
+
+.popular_accommodationDescription h5{
+	margin-bottom: -20px;
+	margin-top: -3px;
+}
+
 .accommodation, .popular{
     
     background-color: #F2F2F2;
-    height: 400px;
+    height: auto;
     border-radius: 10px 10px 10px 10px;
-}
 
+}
 
 .small_container{
     
@@ -233,8 +296,9 @@ button{
     margin-left: 50px;
     margin-top: -10px;
     margin-bottom: 30px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    
+	width: auto;
+	height: 120px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .small_container_img{
@@ -245,7 +309,10 @@ button{
     overflow: hidden;
     border: solid 4px white;
     border-radius: 15px 15px 0px 0px;
-    
+}
+
+.small_container.exception{
+	height: 41px;
 }
 
 .accommodationDescription{
@@ -290,9 +357,130 @@ button{
     margin-left: 8px;
 }
 
+@media (max-width: 1440px) {
+  	.main {
+		display: flex;
+	  	flex-direction: column-reverse;
+	}
+	.popular, .accommodation{
+		width: 100%;
+	}
+	.popular{
+		height: 10%;
+		margin-bottom: 20px;
+	}
+	.popular_containers{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.accommodation{
+		zoom: 1.15;
+	}
+	.accommodation_container{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1100px){
+	.popular_containers{
+		display: flex;
+		flex-direction: column;
+	}
+	.popular_accommodationDescription{
+	}
+}
+
+@media (max-width: 751.5px){
+	.small_container.exception{
+		height: 120px;
+		margin-bottom:30px;
+	}
+}
+
+@media (max-width: 751px){
+	
+	#bloc_page{
+		margin-left: -30px;
+	}
+	
+	.accommodation{
+		background-color: white;
+	}
+	
+	.small_container{
+		width: 200px;
+		margin-bottom: 70px;
+		border-top-left-radius: 20px;
+	}
+	
+	.small_container_img{
+		width: 180px;
+		zoom: 1.39;
+		box-shadow: rgba(0, 0, 0, 0.08) 3px -6.5px 8px;
+	}
+	
+	.accommodationDescription{
+		width: 261px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+	
+	.accommodation_container{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+		align-items: center;
+	}
+	
+	.small_container.exception{
+		height: 120px;
+		margin-bottom:70px;
+	}
+	
+	.popular_containers{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 .activity{
-    display: flex;
-    margin-bottom: 50px;
+	display: grid;
+	column-gap: 2rem;
+	margin: 4rem 0;
+	zoom: 0.90;
+	height: 200px;
+}
+
+@media (min-width: 1100px) {
+  .activity {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 224px 32px 32px 32px 224px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .activity {
+    grid-row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 192px 192px;
+	flex-wrap: wrap;
+	 
+  }
+}
+@media (max-width: 925px) {
+  .activity {
+    grid-row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 192px 192px 192px;
+	 
+  }
+}
+@media (max-width: 650px) {
+  .activity {
+    grid-row-gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 192px 192px 192px 192px 192px 192px;
+  }
 }
 
 .container{
@@ -301,7 +489,7 @@ button{
     height: 340px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 15px 15px 15px 15px;
-    margin-right: 30px;
+    margin-right: auto;
 }
 
 .container_img{
@@ -386,13 +574,55 @@ button{
     top: 0%;
 }
 
+@media (max-width: 1100px){
+	
+	.activity{
+		display: flex;
+		zoom: 1.49;
+		align-items: center;
+	}
+	
+	.container{
+		width: 250px;
+    	height: 10px;
+    	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    	border-radius: 15px 15px 15px 15px;
+    	margin-right: 30px;
+    	margin-bottom: 30px;
+		margin-top: -140px;
+	}
+	
+	.half_container{
+   		width: 250px;
+    	height: 110px;
+    	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    	border-radius: 15px 15px 15px 15px;
+    	margin-right: 30px;
+    	margin-bottom: 130px;
+	}
+
+	.container_img, .half_container_img, .container_pomegues_img, .container_frioul_img{
+    
+    	position: relative;
+    	width: 250px;
+    	height: 100px;
+    	overflow: hidden;
+    	border-radius: 15px 15px 0px 0px;
+    	margin-top: 90px;
+	}
+
+}
+
 
 footer{
     
+	font-family: "Raleway", "Helvetica Neue", Arial;
     display: flex;
     background-color: #F2F2F2;
     margin-left: -40px;
     margin-right: -10px;
+	max-width: 4920px;
+	margin-top: 180px;
 }
 
 footer p{
