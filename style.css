@@ -194,14 +194,14 @@ button{
 
 .accommodation{
     
-    width: 62%;
+    width: 65%;
 }
 
 .accommodation_container{
     
     display: flex;
     flex-wrap: wrap;
-	zoom: 1.1;
+	zoom: 1;
 	position: relative;
 	justify-content: center;
 
@@ -226,6 +226,11 @@ button{
     
     width: 32%;
     margin-left: 20px;
+}
+
+.popular h5{
+    
+    font-size: 9px;
 }
 
 .popular_header{
@@ -357,7 +362,7 @@ button{
     margin-left: 8px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1140px) {
   	.main {
 		display: flex;
 	  	flex-direction: column-reverse;
