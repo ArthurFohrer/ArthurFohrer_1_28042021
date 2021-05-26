@@ -11,19 +11,25 @@ body{
 	margin: auto;
 }
 
-header{
+.headere{
+	width: 100%;
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 15px;
+	flex-wrap: wrap;
 }
 
 .header_logo{
-	justify-self: start;
+	display: flex;
 }
 
 .header_container{
-	margin-left: auto;
 	display: flex;
-	min-width: 200px;
-	margin-top: 16px;
+}
+
+.browse_container{
+	display: flex;
 }
 
 .browse{
@@ -39,15 +45,32 @@ header{
 }
 
 @media (max-width: 500px){
-	.browse_container{
-		display: flex;
-		flex-direction: row;
+	.headere{
+		flex-wrap: wrap;
+	}
+	.header_container{
 		width: 100%;
-
+	}
+	.browse_container{
+		margin-top: 50px;
+		margin-left: -10px;
+		margin-right: -10px;
+		width: 100%;
 	}
 	.browse_accommodation, .browse_activity{
-		margin-top: 0px;
 		width: 50%;
+	}
+	.signup{
+		position: absolute;
+    	top: 19px;
+		right: 30px;
+	}
+	.logo{
+		position: absolute;
+	}
+	.browse{
+		display: flex;
+		justify-content: center;
 	}
 	.browse:hover{
 		border-top: none;
