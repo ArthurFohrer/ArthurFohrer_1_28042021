@@ -1,3 +1,5 @@
+/*------------------ BODY & BLOC_PAGE --------------------*/
+
 body{ 
     
     font-family: "Raleway", "Helvetica Neue", Arial;
@@ -11,7 +13,11 @@ body{
 	margin: auto;
 }
 
-.headere{
+/*--------------------------------------------------------*/
+
+/*-------- HEADER (LOGO + LINK) & SEARCH + FILTER --------*/
+
+.header{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -55,7 +61,7 @@ body{
 	.filter{
 		zoom: 1.2
 	}
-	.headere{
+	.header{
 		flex-wrap: wrap;
 	}
 	.header_container{
@@ -157,6 +163,7 @@ body{
 
 input[type=text]{
 	padding-left: 10px;
+	font-weight: 800;
 }
 
 .fas.fa-map-marker-alt, .fas.fa-map-marker-alt.circle{
@@ -313,6 +320,10 @@ button{
 		margin-top: 100px;
 	}
 }
+
+/*--------------------------------------------------------*/
+
+/*---------- MAIN PAGE (ACCOMMODATION + POPULAR) ---------*/
 
 .main{
     
@@ -632,6 +643,10 @@ button{
 	}
 }
 
+/*--------------------------------------------------------*/
+
+/*---------------------- ACTIVITY ------------------------*/
+
 .activity{
 	display: flex;
 	justify-content: space-between;
@@ -800,13 +815,27 @@ button{
 	}
 	
 	.container_img img, .half_container_img img, .container_pomegues_img img, .container_frioul_img img{
-		width: 350px;;
+		width: 350px;
+		position: relative;
+		top: -40px;
+	}
+	
+	.container_img img{
+		top: -75px;
+	}
+	
+	.container_pomegues_img img{
+		top: -230px;
 	}
 	
 	.half_container.exception{
 		margin-bottom: -30px;
 	}
 }
+
+/*--------------------------------------------------------*/
+
+/* ----------------------- FOOTER ----------------------- */
 
 footer{
     width: 100%;
@@ -845,3 +874,5 @@ footer h3{
     margin-right: 150px;
     margin-left: 40px;
 }
+
+/*--------------------------------------------------------*/
