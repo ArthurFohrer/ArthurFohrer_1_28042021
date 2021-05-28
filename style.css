@@ -100,6 +100,17 @@ body{
 	.information i, .information p{
 		margin-top: 30px;
 	}
+	.search_mobile{
+		display: none;
+	}
+	.fas.fa-search{
+		position: relative;
+		left: -27px;
+		top: 9px;
+	}
+	button{
+		width: 35px;
+	}
 }
 
 @media (min-width: 500.1px) and (max-width: 750px){
@@ -140,6 +151,13 @@ body{
     display: flex;
 }
 
+.fas.fa-search{
+	color: white;
+}
+
+input[type=text]{
+	padding-left: 10px;
+}
 
 .fas.fa-map-marker-alt, .fas.fa-map-marker-alt.circle{
     
@@ -262,6 +280,12 @@ button{
     border-radius: 32px;
     font-weight: bold;
 	margin-top: 5px;
+	transition-duration: 0.1s;
+}
+
+.search_filter:hover{
+	background-color: #DEEBFF;
+ 	transform: scale(1.1);
 }
 
 .title_filter{
@@ -307,6 +331,11 @@ button{
 	position: relative;
 	justify-content: center;
 
+}
+
+.accommodation_container a, .activity a, .popular a{
+	color: black;
+	text-decoration: none;
 }
 
 .accommodation h4, .accommodation p, .popular h4{
@@ -368,7 +397,10 @@ button{
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
 	height: 90px;
 	margin-bottom: 10px;
-	overflow: auto;
+}
+
+.popular_container a{
+	display: flex;
 }
 
 .popular_container_img img{
@@ -425,6 +457,21 @@ button{
     overflow: hidden;
     border: solid 4px white;
     border-radius: 15px 15px 0px 0px;
+}
+
+.small_container img{
+	position: relative;
+	top: -40px;
+}
+
+.small_container.last img{
+	position: relative;
+	top: -130px;
+}
+
+.small_container.three img{
+	position: relative;
+	top: -80px;
 }
 
 .small_container.exception{
@@ -771,7 +818,6 @@ footer{
 
 .footer_container{
 	display: flex;
-
 }
 
 footer p{
