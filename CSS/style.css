@@ -434,6 +434,7 @@ button{
 .popular_accommodationDescription h5{
 	margin-bottom: -20px;
 	margin-top: -3px;
+	min-width: 110px;
 }
 
 .popular_accommodationDescription h6{
